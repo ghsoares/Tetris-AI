@@ -1,0 +1,8 @@
+C:\Users\ghsoa\Documents\Godot\Tetris AI\.mono\temp\bin\Debug\Tetris AI.dll
+C:\Users\ghsoa\Documents\Godot\Tetris AI\.mono\temp\bin\Debug\Tetris AI.pdb
+C:\Users\ghsoa\Documents\Godot\Tetris AI\.mono\temp\obj\Debug\Tetris AI.csprojAssemblyReference.cache
+C:\Users\ghsoa\Documents\Godot\Tetris AI\.mono\temp\obj\Debug\Tetris AI.AssemblyInfoInputs.cache
+C:\Users\ghsoa\Documents\Godot\Tetris AI\.mono\temp\obj\Debug\Tetris AI.AssemblyInfo.cs
+C:\Users\ghsoa\Documents\Godot\Tetris AI\.mono\temp\obj\Debug\Tetris AI.csproj.CoreCompileInputs.cache
+C:\Users\ghsoa\Documents\Godot\Tetris AI\.mono\temp\obj\Debug\Tetris AI.dll
+C:\Users\ghsoa\Documents\Godot\Tetris AI\.mono\temp\obj\Debug\Tetris AI.pdb

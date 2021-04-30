@@ -1,0 +1,88 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scripts/Graph.cs" type="Script" id=1]
+[ext_resource path="res://Scripts/AI/NeuroEvolution.cs" type="Script" id=2]
+[ext_resource path="res://Fonts/Roboto/Roboto-Regular.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 3 )
+
+[node name="Game" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 16.0
+margin_top = 16.0
+margin_right = -16.0
+margin_bottom = -16.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+populationSize = 20
+iterations = 1
+maxWaitTime = 5.0
+
+[node name="Scroll" type="ScrollContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -331.0
+rect_clip_content = false
+scroll_horizontal_enabled = false
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="VBox" type="VBoxContainer" parent="Scroll"]
+
+[node name="Grid" type="GridContainer" parent="Scroll/VBox"]
+columns = 10
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 697.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="IterationsSlider" type="VSlider" parent="Panel"]
+anchor_bottom = 1.0
+margin_right = 16.0
+min_value = 1.0
+max_value = 500.0
+value = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Iterations" type="Label" parent="Panel"]
+margin_left = 23.0
+margin_right = 103.0
+margin_bottom = 14.0
+text = "Iterations: {}"
+
+[node name="Generations" type="Label" parent="Panel"]
+margin_left = 23.0
+margin_top = 24.0
+margin_right = 103.0
+margin_bottom = 38.0
+text = "Iterations: {}"
+
+[node name="GenerationsGraph" type="ColorRect" parent="Panel"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -266.0
+margin_top = -187.0
+color = Color( 0.137255, 0.137255, 0.137255, 1 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+font = SubResource( 1 )
+graphMargin = 8.0

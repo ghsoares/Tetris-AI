@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scripts/GameInstance.cs" type="Script" id=1]
+[ext_resource path="res://Scripts/Inputer.cs" type="Script" id=2]
+[ext_resource path="res://Scripts/AI/Sensors.cs" type="Script" id=3]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -960.0
+margin_bottom = -472.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+width = 10
+height = 31
+fallDelay = 0.0
+
+[node name="Sensors" type="Node2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="Inputer" type="Node" parent="."]
+script = ExtResource( 2 )
+capturePlayerInput = false
+
+[node name="GameBorder" type="ReferenceRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+border_color = Color( 1, 1, 1, 1 )
+border_width = 2.0
+editor_only = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
